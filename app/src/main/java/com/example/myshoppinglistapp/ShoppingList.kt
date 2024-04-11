@@ -203,16 +203,16 @@ fun ShoppingListItems(
     onEditClick: () -> Unit,
     onDeleteClick: () -> Unit
 ){
-Row(modifier = Modifier
-    .fillMaxSize()
-    .padding(8.dp)
-    .border(
-        border = BorderStroke
-            (
-            2.dp, Color(0xFF0000FF)
-        ), shape = RoundedCornerShape(30)
-    ),horizontalArrangement = Arrangement.SpaceBetween
-    ) {
+    Row(modifier = Modifier
+        .fillMaxSize()
+        .padding(8.dp)
+        .border(
+            border = BorderStroke
+                (
+                2.dp, Color.Blue
+            ), shape = RoundedCornerShape(30)
+        ),horizontalArrangement = Arrangement.SpaceBetween
+        ) {
     Text(text = items.name, modifier = Modifier.padding(8.dp))
     Text(text = "Qty: ${items.quantity}", modifier = Modifier.padding(8.dp))
     Row(modifier = Modifier.padding(8.dp), ) {
